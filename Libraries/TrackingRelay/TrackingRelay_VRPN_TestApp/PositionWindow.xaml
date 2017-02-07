@@ -1,0 +1,22 @@
+﻿<Window x:Class="TrackingRelay_VRPN_TestApp.PositionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="PositionWindow" Height="300" Width="300" Topmost="True">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Scale" Width="50"></TextBlock>
+            <TextBox x:Name="_scale" Width="100" Text="1;1;1"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Offset" Width="50"></TextBlock>
+            <TextBox x:Name="_offset" Width="100" Text="0;0;0"></TextBox>
+        </StackPanel>
+    <Grid x:Name="_parentGrid">
+        <Ellipse x:Name="_rightHand" Fill="Blue" HorizontalAlignment="Left" Height="15" Margin="201,112,0,0" Stroke="Black" VerticalAlignment="Top" Width="15"/>
+        <Ellipse x:Name="_leftHand" Fill="Red" HorizontalAlignment="Left" Height="15" Margin="40,108,0,0" Stroke="Black" VerticalAlignment="Top" Width="15"/>
+        <Ellipse x:Name="_chest" Fill="Yellow" HorizontalAlignment="Left" Height="15" Margin="118,108,0,0" Stroke="Black" VerticalAlignment="Top" Width="15"/>
+        <Ellipse x:Name="_backOfNeck" Fill="YellowGreen" HorizontalAlignment="Left" Height="15" Margin="118,168,0,0" Stroke="Black" VerticalAlignment="Top" Width="15"/>
+
+        </Grid>
+    </StackPanel>
+</Window>
